@@ -1,0 +1,3 @@
+# Optional requirements for running Token Tools locally on Desktop
+undetected_chromedriver>=3.5.0
+selenium>=4.20.0

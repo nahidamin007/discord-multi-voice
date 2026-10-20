@@ -1,0 +1,35 @@
+# Sensitive Data / Credentials
+tokens.txt
+token_details.csv
+*.bak
+.env
+deploy_hf.ps1
+github_deploy.ps1
+
+# Ignore all plain-text files except requirements
+*.txt
+!requirements*.txt
+
+# Virtual Environment
+.venv/
+venv/
+env/
+
+# Python cache & artifacts
+__pycache__/
+*.py[cod]
+*.so
+build/
+dist/
+*.egg-info/
+
+# Logs
+*.log
+
+# IDE specific
+.vscode/
+.idea/
+
+# OS specific
+.DS_Store
+Thumbs.db

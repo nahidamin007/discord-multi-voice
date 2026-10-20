@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: exiters-multi-voice
+    runtime: python
+    rootDir: Exiters-Discord-Multi-Voice
+    buildCommand: pip install -r requirements.txt
+    startCommand: python dashboard.py
+    plan: free
+    autoDeploy: true
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: DASHBOARD_PASSWORD
+        generateValue: true
+      - key: ENABLE_TUNNEL
+        value: "false"
