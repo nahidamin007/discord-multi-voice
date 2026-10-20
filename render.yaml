@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: exiters-multi-voice
+    name: discord-multi-voice
     runtime: python
     rootDir: Exiters-Discord-Multi-Voice
     buildCommand: pip install -r requirements.txt
@@ -11,6 +11,12 @@ services:
       - key: PYTHON_VERSION
         value: 3.11.9
       - key: DASHBOARD_PASSWORD
-        generateValue: true
+        value: admin123
+      - key: AUTO_START
+        value: "false"
+      - key: CHANNEL_IDS
+        value: ""
+      - key: TOKENS
+        value: ""
       - key: ENABLE_TUNNEL
         value: "false"
